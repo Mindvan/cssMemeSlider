@@ -159,3 +159,26 @@ label[for="ctrl-4"]:hover span {
     margin-left: -300%;
     transition: 1s cubic-bezier(.85,0,0,.85);
 }
+
+#ctrl-1:checked ~ .slider .slides {
+    margin-left: 0;
+    transition: 1s cubic-bezier(.85,0,0,.85);
+}
+
+#ctrl-2:checked ~ .slider .slides {
+    margin-left: -100%;
+    transition: 1s cubic-bezier(.85,0,0,.85);
+}
+
+#ctrl-3:checked ~ .slider .slides {
+    margin-left: -200%;
+    transition: 1s cubic-bezier(.85,0,0,.85);
+}
+#ctrl-4:checked ~ .slider .slides {
+    margin-left: -300%;
+    transition: 1s cubic-bezier(.85,0,0,.85);
+}
+
+.btn-radio {
+    display: none;
+}
