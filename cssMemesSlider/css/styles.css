@@ -103,3 +103,59 @@ img {
     display: block;
     transform: scale(0.35);
 }
+
+label[for="ctrl-1"]:hover,
+label[for="ctrl-2"]:hover,
+label[for="ctrl-3"]:hover,
+label[for="ctrl-4"]:hover {
+    cursor: pointer;
+}
+
+label[for="ctrl-1"]:hover span,
+label[for="ctrl-2"]:hover span,
+label[for="ctrl-3"]:hover span,
+label[for="ctrl-4"]:hover span {
+    background-color: white;
+    border: 0.5em white solid;
+    transition: 0.5s ease-in-out;
+}
+
+#ctrl-1:checked ~ .controls label[for="ctrl-1"]:hover span,
+#ctrl-2:checked ~ .controls label[for="ctrl-2"]:hover span,
+#ctrl-3:checked ~ .controls label[for="ctrl-3"]:hover span,
+#ctrl-4:checked ~ .controls label[for="ctrl-4"]:hover span {
+    background-color: transparent;
+    border: 0.5em white solid;
+    border-radius: 50%;
+}
+
+#ctrl-1:checked ~ .controls label[for="ctrl-1"] span,
+#ctrl-2:checked ~ .controls label[for="ctrl-2"] span,
+#ctrl-3:checked ~ .controls label[for="ctrl-3"] span,
+#ctrl-4:checked ~ .controls label[for="ctrl-4"] span {
+    background-color: transparent;
+    border: 0.5em red solid;
+    border-radius: 50%;
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+
+#ctrl-1:checked ~ .titles-wrapper .titles {
+    margin-left: 0;
+    transition: 1s cubic-bezier(.85,0,0,.85);
+}
+
+#ctrl-2:checked ~ .titles-wrapper .titles {
+    margin-left: -100%;
+    transition: 1s cubic-bezier(.85,0,0,.85);
+}
+
+#ctrl-3:checked ~ .titles-wrapper .titles {
+    margin-left: -200%;
+    transition: 1s cubic-bezier(.85,0,0,.85);
+}
+
+#ctrl-4:checked ~ .titles-wrapper .titles {
+    margin-left: -300%;
+    transition: 1s cubic-bezier(.85,0,0,.85);
+}
