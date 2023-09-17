@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px) {
+    .wrapper {
+        grid-row-gap: 1em;
+        width: 80%;
+        grid-template-areas:
+        "a a"
+        "c c"
+        "b b";
+        grid-template-columns: 100%;
+    }
+
+    .titles-wrapper {
+        text-align: start;
+    }
+
+    .controls {;
+        justify-content: center;
+    }
+}
